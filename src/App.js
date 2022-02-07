@@ -5,9 +5,16 @@ export default function App() {
   return (
     <div className="App">
       <h1>Weather App</h1>
-      <a href="https://github.com/Sophiaew/React-Weather-Project">
-        Open Source
-      </a>
+      <p>
+        This project is{" "}
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/Sophiaew/React-Weather-Project"
+        >
+          open source
+        </a>
+      </p>
     </div>
   );
 }
