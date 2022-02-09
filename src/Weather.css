@@ -30,9 +30,7 @@
   list-style: none;
 }
 
-.Weather img {
-  height: 64px;
-  width: 64px;
+.WeatherInfo canvas {
   margin-right: 10px;
 }
 
