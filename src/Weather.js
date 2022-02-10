@@ -19,8 +19,7 @@ export default function Weather(props) {
       description: response.data.weather[0].description,
       date: new Date(response.data.dt * 1000),
       city: response.data.name,
-      lon: response.data.coord.lon,
-      lat: response.data.coord.lat,
+      coordinates: response.data.coord,
     });
   }
 
@@ -63,7 +62,7 @@ export default function Weather(props) {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
-        <WeatherForecast lon={weatherData.lon} lat={weatherData.lat} />
+        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
